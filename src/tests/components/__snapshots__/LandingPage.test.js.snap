@@ -1,23 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render LandingPage component correctly 1`] = `
-<section>
+<section
+  className="landing"
+>
   <p
+    className="landing__toggle-text"
     key="0"
   >
-    Reliable
+    Creative
   </p>
   <p
-    className="hidden"
+    className="hidden landing__toggle-text"
     key="1"
   >
     Curious
   </p>
   <p
-    className="hidden"
+    className="hidden landing__toggle-text"
     key="2"
   >
-    Disciplined
+    Innovative
   </p>
+  <div
+    className="landing__message"
+  >
+    <h1>
+      Hey there!
+    </h1>
+    <h3>
+      Welcome to my portfolio
+    </h3>
+    <Link
+      replace={false}
+      to="/introduction"
+    >
+      Proceed
+    </Link>
+  </div>
 </section>
 `;

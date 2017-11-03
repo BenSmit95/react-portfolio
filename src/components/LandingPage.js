@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class LandingPage extends React.Component {
     state = {
@@ -22,7 +23,7 @@ class LandingPage extends React.Component {
                 <div className="landing__message">
                     <h1>Hey there!</h1>
                     <h3>Welcome to my portfolio</h3>
-                    <button>Proceed</button>
+                    <Link to="/introduction">Proceed</Link>
                 </div>
             </section>
         );
