@@ -2,7 +2,7 @@ import React from 'react';
 
 class LandingPage extends React.Component {
     state = {
-        toggleTexts: ['Reliable', 'Curious', 'Disciplined'],
+        toggleTexts: ['Creative', 'Curious', 'Innovative'],
         toggleTextIterator: 0
     }
 
@@ -10,15 +10,20 @@ class LandingPage extends React.Component {
         // Which text is visible?
         const toggleTexts = this.state.toggleTexts.map((text, index) => (
             this.state.toggleTextIterator === index ? (
-                <p key={index}>{text}</p>
+                <p key={index} className="landing__toggle-text">{text}</p>
             ) : (
-                <p key={index} className="hidden">{text}</p>
+                <p key={index} className="hidden landing__toggle-text">{text}</p>
             )
         ))
 
         return (
-            <section>
+            <section className="landing">
                 {toggleTexts}
+                <div className="landing__message">
+                    <h1>Hey there!</h1>
+                    <h3>Welcome to my portfolio</h3>
+                    <button>Proceed</button>
+                </div>
             </section>
         );
     }
@@ -30,7 +35,7 @@ class LandingPage extends React.Component {
             this.setState(() => ({
                 toggleTextIterator
             }));
-        }, 2000)
+        }, 3500)
     }
 };
 

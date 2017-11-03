@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render LandingPage component correctly 1`] = `
+<section>
+  <p
+    key="0"
+  >
+    Reliable
+  </p>
+  <p
+    className="hidden"
+    key="1"
+  >
+    Curious
+  </p>
+  <p
+    className="hidden"
+    key="2"
+  >
+    Disciplined
+  </p>
+</section>
+`;
