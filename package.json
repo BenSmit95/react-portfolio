@@ -4,6 +4,7 @@
   "description": "portfolio made with react",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server.js",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
