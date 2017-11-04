@@ -1,3 +1,45 @@
 .header {
-    display: none;
+    animation: 1s forwards slide-from-top;
+    background: darken($dark-blue, 10%);
+    border-bottom: 1px solid lighten($dark-blue, 20%);
+    color: $off-white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    @keyframes slide-from-top {
+        0% {
+            margin-top: -5rem;
+        }
+        100% {
+            margin-top: 0;
+        }
+    }
+}
+
+nav {
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.header__nav-link {
+    flex-grow: 1;
+    font-size: $font-size-small;
+    padding: $s-size;
+    text-align: center;
+    
+    @media (min-width: $desktop-breakpoint) {
+        flex-grow: 0;
+        font-size: $font-size-large;
+        padding: $m-size;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: $dark-blue;
+    }
 }

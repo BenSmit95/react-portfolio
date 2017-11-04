@@ -5,8 +5,8 @@ const Introduction = () => (
         <div className="container">
             <h2 className="section__title">Introduction:</h2>
             <div className="introduction__content">
-                <figure>
-                    <img className="introduction__photo" src="/images/me.png" alt="A picture of me" />
+                <figure className="introduction__figure">
+                    <img src="/images/me.png" alt="A picture of me" />
                     <figcaption>That's me!</figcaption>
                 </figure>
                 <div>

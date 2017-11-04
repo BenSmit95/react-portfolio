@@ -1,11 +1,23 @@
 #introduction {
-    background: $off-white;
+    background: $dark-blue;
+    color: $off-white;
 }
 
 .introduction__content {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+    }
 }
 
-.introduction__photo {
-    width: 20rem;
+.introduction__figure {
+    font-style: italic;
+    text-align: center;
+    img {
+        border-radius: 50%;
+        width: 20rem;
+    }
 }

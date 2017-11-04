@@ -13,23 +13,27 @@
     flex-flow: row wrap;
     justify-content: space-around;
     list-style: none;
+    padding: 0;
 }
 
 .skills__list-item {
-    flex-basis: 18rem;
-    margin: $l-size;
+    flex-basis: 10rem;
+    margin: $s-size;
     text-align: center;
     transition: transform 0.4s 0.1s;
+
     p {
         opacity: 0;
         transition: opacity 1s;
     }
-
     &:hover {
         transform: scale(1.3);
-
         p {
             opacity: 1;
         }
+    }
+    @media (min-width: $desktop-breakpoint) {
+        flex-basis: 18rem;
+        margin: $l-size;
     }
 }

@@ -3,6 +3,12 @@
 }
 
 .hobbies__container {
+    align-items: center;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: space-around;
+
+    @media (min-width: $desktop-breakpoint) {
+        flex-flow: row wrap;
+    }
 }
