@@ -1,0 +1,43 @@
+.hobby {
+    background: black;
+    position: relative;
+    transition: transform 0.2s 0.1s ease-in;
+    width: 25rem;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:hover .hobby__image {
+        opacity: 0.5;
+    }
+    &:hover .hobby__text {
+        opacity: 1;
+    }
+}
+
+.hobby__image {
+    display: block;
+    height: auto;
+    width: 100%;
+    transition: opacity 0.3s linear;
+}
+
+.hobby__text {
+    color: white;
+    opacity: 0;
+    text-align: center;
+    transition: 0.5s linear;
+}
+
+.hobby__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}

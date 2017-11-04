@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 class LandingPage extends React.Component {
     state = {
         toggleTexts: ['Creative', 'Curious', 'Innovative'],
-        toggleTextIterator: 0
+        toggleTextIterator: 0,
+        toggleTextId: 'undefined'
     }
 
     render() {
@@ -18,25 +19,33 @@ class LandingPage extends React.Component {
         ))
 
         return (
-            <section className="landing">
+            <div className="landing">
                 {toggleTexts}
                 <div className="landing__message">
                     <h1>Hey there!</h1>
                     <h3>Welcome to my portfolio</h3>
-                    <Link to="/introduction">Proceed</Link>
+                    <Link className ="button" to="/introduction">Proceed</Link>
                 </div>
-            </section>
+            </div>
         );
     }
 
     // after mounting, set a timer to toggle the text
-    componentDidMount() {
-        setInterval(() => {
+    componentDidMount = () => {
+        const toggleTextId = setInterval(() => {
             const toggleTextIterator = (this.state.toggleTextIterator + 1) % this.state.toggleTexts.length;
             this.setState(() => ({
                 toggleTextIterator
             }));
         }, 3500)
+        this.setState(() => ({
+            toggleTextId
+        }));
+    }
+
+    // Remove the toggle text when unmounting
+    componentWillUnmount = () => {
+        clearInterval(this.state.toggleTextId);
     }
 };
 

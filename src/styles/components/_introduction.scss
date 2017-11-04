@@ -1,0 +1,18 @@
+.introduction {
+    align-items: center;
+    display: flex;
+}
+
+.introduction__picture {
+    text-align: center;
+    img {
+        border-radius: 50%;
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+.introduction__hobbies {
+    display: flex;
+    justify-content: space-around;
+}

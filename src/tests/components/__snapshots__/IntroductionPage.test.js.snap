@@ -1,7 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render IntroductionPage component correctly 1`] = `
-<div>
-  IntroductionPage component
-</div>
+<section
+  className="introduction section"
+>
+  <figure
+    className="introduction__picture"
+  >
+    <img
+      alt="A picture of me"
+      src="/images/me.png"
+    />
+    <figcaption>
+      That's me!
+    </figcaption>
+  </figure>
+  <div>
+    <h2>
+      About me:
+    </h2>
+    <p>
+      Hey there! My name is Benjamin, and I'm a self taught web developer based in Katwijk, ZH. My skills mainly lie in front-end development, where I use technologies like React and Sass to make interesting web applications.
+    </p>
+    <p>
+      I'm always learning more though! Right now I'm focusing on learning more about backend technologies, like Node and Express. I don't like sitting still and am always looking for the next challenge.
+    </p>
+    <p>
+      That's why I am looking for a junior position at a web development company, where I can push my limits and develop my skills. My contact info is on THIS page.
+    </p>
+  </div>
+</section>
 `;
