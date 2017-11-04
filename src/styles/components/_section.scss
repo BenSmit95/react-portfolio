@@ -1,11 +1,13 @@
 .section {
-    background: $off-white;
+    width: 100%;
 }
 
-.section__header {
+.section__title {
+    margin: 0;
     text-align: center;
 }
 
-.section__content {
-    display: flex;
+.section__sub-title {
+    margin: 0;
+    text-align: center;
 }

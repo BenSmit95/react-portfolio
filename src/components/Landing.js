@@ -1,13 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-class LandingPage extends React.Component {
+class Landing extends React.Component {
     state = {
         toggleTexts: ['Creative', 'Curious', 'Innovative'],
         toggleTextIterator: 0,
         toggleTextId: 'undefined'
     }
 
+    handleButtonClick = () => {
+        document.getElementById('introduction').scrollIntoView({
+            block: 'start',
+            behavior: 'smooth'
+        });
+        history.pushState({}, 'Introduction', '/#introduction');
+    }
     render() {
         // Which text is visible?
         const toggleTexts = this.state.toggleTexts.map((text, index) => (
@@ -24,7 +30,7 @@ class LandingPage extends React.Component {
                 <div className="landing__message">
                     <h1>Hey there!</h1>
                     <h3>Welcome to my portfolio</h3>
-                    <Link className ="button" to="/introduction">Proceed</Link>
+                    <button onClick={this.handleButtonClick}>Proceed</button>
                 </div>
             </div>
         );
@@ -49,4 +55,4 @@ class LandingPage extends React.Component {
     }
 };
 
-export default LandingPage;
+export default Landing;

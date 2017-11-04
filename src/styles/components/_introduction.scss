@@ -1,18 +1,11 @@
-.introduction {
-    align-items: center;
+#introduction {
+    background: $off-white;
+}
+
+.introduction__content {
     display: flex;
 }
 
-.introduction__picture {
-    text-align: center;
-    img {
-        border-radius: 50%;
-        height: 20rem;
-        width: 20rem;
-    }
-}
-
-.introduction__hobbies {
-    display: flex;
-    justify-content: space-around;
+.introduction__photo {
+    width: 20rem;
 }
