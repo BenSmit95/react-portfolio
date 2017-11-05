@@ -5,6 +5,7 @@ import { LogoHtml,
     LogoSass, 
     LogoNodeJS, 
     LogoReact,
+    LogoRedux,
     LogoJava,
     LogoCSharp,
     LogoGit,
@@ -42,6 +43,10 @@ const Skills = () => (
                 <li className="skills__list-item">
                     <p>ReactJS</p>
                     <LogoReact />
+                </li>
+                <li className="skills__list-item">
+                    <p>Redux</p>
+                    <LogoRedux />
                 </li>
                 <li className="skills__list-item">
                     <p>Java</p>
