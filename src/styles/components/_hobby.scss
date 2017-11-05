@@ -1,14 +1,21 @@
 .hobby {
     background: black;
     border: 1px solid darken($dark-blue, 10%);
+    margin: $s-size;
     position: relative;
     transition: transform 0.2s 0.1s ease-in;
-    width: 30%;
+    &:hover {
+        transform: scale(1.1);
+    }
     &:hover .hobby__image {
         opacity: 0.5;
     }
     &:hover .hobby__text {
         opacity: 1;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+        width: 30%;
     }
 }
 

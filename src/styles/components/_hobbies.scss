@@ -5,8 +5,13 @@
 
 .hobbies__container {
     align-items: center;
+    border-bottom: 1px solid $off-white;
     display: flex;
-    flex-flow: row;
+    flex-flow: column nowrap;
     justify-content: space-around;
-    padding: $s-size;
+    padding: $xs-size 0 $m-size 0;
+    
+    @media (min-width: $desktop-breakpoint) {
+        flex-flow: row;
+    }
 }

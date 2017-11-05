@@ -21,10 +21,19 @@
 }
 
 .landing__message {
-    animation: landing__message 2s forwards ease;
     color: $off-white;
-    padding-top: 8rem;
     text-align: center;
+    padding-top: 10rem;
+    h1 {
+        animation: landing__message 2s forwards ease;
+        font-size: 4rem;
+        margin: $s-size;
+    }
+    h3 {
+        animation: fade-in 2s 2s forwards;
+        font-size: 2rem;
+        opacity: 0;
+    }
     @keyframes landing__message {
         0% {
             margin-top: 20px;
@@ -35,21 +44,40 @@
             opacity: 1;
         }
     }
+    @media (min-width: $desktop-breakpoint) {
+        h1 {
+            font-size: 6rem;
+        }
+        h3 {
+            font-size: 4rem;
+        }
+    }
 }
 
 .landing__button {
+    animation: fade-in 2s 5s forwards;
     background: rgba(0, 0, 0, 0);
     border: 1px solid $off-white;
     border-radius: $xs-size;
     color: $off-white;
     cursor: pointer;
-    font-size: $font-size-large;
+    font-size: $font-size-extra-large;
     padding: $s-size;
+    opacity: 0;
     outline: none;
     &:hover {
         opacity: 0.9;
     }
     &:active {
         opacity: 0.8;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

@@ -7,10 +7,12 @@
 .section__title {
     margin: $s-size 0;
     text-align: center;
+    font-size: $font-size-extra-large;
 }
 
 .section__sub-title {
     border-bottom: 1px solid $off-white;
+    font-size: $font-size-large;
     margin: 0 0 $m-size 0;
     padding-bottom: $s-size;
     text-align: center;
