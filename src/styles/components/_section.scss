@@ -8,6 +8,8 @@
 }
 
 .section__sub-title {
-    margin: 0;
+    border-bottom: 1px solid $off-white;
+    margin: 0 0 $m-size 0;
+    padding-bottom: $s-size;
     text-align: center;
 }

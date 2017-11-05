@@ -4,6 +4,7 @@ import {
     LogoHtml,
     LogoCSS,
     LogoJS,
+    LogoJQuery,
     LogoSass,
     LogoNodeJS,
     LogoReact,
@@ -17,8 +18,8 @@ import {
 class Projects extends React.Component {
     render() {
         return (
-            <section id="projects">
-                <div className="container">
+            <section id="projects" className="section">
+                <div className="container container--large">
                     <h2 className="section__title">Projects</h2>
                     <h3 className="section__sub-title">Here are some of the things I've made</h3>
                     <div className="projects__list">
@@ -50,7 +51,8 @@ class Projects extends React.Component {
                             skills={[
                                 LogoHtml,
                                 LogoCSS,
-                                LogoJS
+                                LogoJS,
+                                LogoJQuery
                             ]}
                         />
                     </div>

@@ -11,11 +11,13 @@
 
 .landing__toggle-text {
     color: $off-white;
-    font-size: $font-size-large;
+    font-size: $font-size-extra-large;
     margin: 0;
     position: absolute;
-    top: $m-size;
+    text-align: center;
+    top: $xl-size;
     transition: opacity 2s;
+    width: 100%;
 }
 
 .landing__message {

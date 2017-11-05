@@ -1,7 +1,8 @@
 import React from 'react';
 import { LogoHtml, 
     LogoCSS, 
-    LogoJS, 
+    LogoJS,
+    LogoJQuery,
     LogoSass, 
     LogoNodeJS, 
     LogoReact,
@@ -16,7 +17,7 @@ import { LogoHtml,
 
 const Skills = () => (
     <section id="skills" className="section">
-        <div className="skills__container">
+        <div className="container container--large">
             <h2 className="section__title">Skills</h2>
             <h3 className="section__sub-title">Here are the tools and technologies I have experience with</h3>
             <ul className="skills__list">
@@ -31,6 +32,10 @@ const Skills = () => (
                 <li className="skills__list-item">
                     <p>JavaScript (ES6)</p>
                     <LogoJS />
+                </li>
+                <li className="skills__list-item">
+                    <p>jQuery</p>
+                    <LogoJQuery />
                 </li>
                 <li className="skills__list-item">
                     <p>Sass</p>
