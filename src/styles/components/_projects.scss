@@ -1,0 +1,10 @@
+#projects {
+    background-color: $dark-grey;
+    color: $off-white;
+}
+
+.projects__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}

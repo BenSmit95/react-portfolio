@@ -1,8 +1,11 @@
 import React from 'react';
-import Landing from './Landing';
+import Contact from './Contact';
+import Footer from './Footer';
 import Header from './Header';
 import Hobbies from './Hobbies';
 import Introduction from './Introduction';
+import Landing from './Landing';
+import Projects from './Projects';
 import Skills from './Skills';
 
 class MainPage extends React.Component {
@@ -16,7 +19,10 @@ class MainPage extends React.Component {
                     <Introduction />
                     <Hobbies />
                     <Skills />
+                    <Projects />
+                    <Contact />
                 </main>
+                <Footer />
             </div>
         );
     }
