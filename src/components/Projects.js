@@ -24,7 +24,7 @@ class Projects extends React.Component {
                         <ProjectItem 
                             color="blue" 
                             link="https://react-expensify-app-ben.herokuapp.com/"
-                            name="Expensify" 
+                            name="expensify" 
                             skills={[
                                 LogoHtml,
                                 LogoCSS,
