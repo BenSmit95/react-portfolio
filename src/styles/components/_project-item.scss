@@ -66,10 +66,11 @@ $regular-size: 20rem;
         width: 90%;
 
         li {
-            margin: $s-size;
-            width: $s-size;
+            margin: $xs-size;
+            width: $m-size;
 
             @media (min-width: $desktop-breakpoint) {
+                margin: $s-size;
                 width: $xl-size;
             }
         }

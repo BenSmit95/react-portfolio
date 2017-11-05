@@ -7,6 +7,7 @@ import {
     LogoSass,
     LogoNodeJS,
     LogoReact,
+    LogoRedux,
     LogoGit,
     LogoGitHub,
     LogoHeroku,
@@ -32,6 +33,7 @@ class Projects extends React.Component {
                                 LogoJS,
                                 LogoNodeJS,
                                 LogoReact,
+                                LogoRedux,
                                 LogoGit,
                                 LogoHeroku,
                                 LogoWebpack
