@@ -25,7 +25,9 @@ class Projects extends React.Component {
                         <ProjectItem 
                             color="blue" 
                             link="https://react-expensify-app-ben.herokuapp.com/"
-                            name="expensify" 
+                            name="expensify"
+                            subText="A single page React app to help you manage your expenses!"
+                            imageLink="/images/expensify-picture.png"
                             skills={[
                                 LogoHtml,
                                 LogoCSS,
@@ -37,6 +39,18 @@ class Projects extends React.Component {
                                 LogoGit,
                                 LogoHeroku,
                                 LogoWebpack
+                            ]}
+                        />
+                        <ProjectItem
+                            color="green"
+                            link="https://codepen.io/CyclopsPirate/pen/XeZNpy"
+                            name="Ron Swanson Quote Generator"
+                            subText="Making AJAX calls in 4 different ways!"
+                            imageLink="/images/quote-generator-picture.png"
+                            skills={[
+                                LogoHtml,
+                                LogoCSS,
+                                LogoJS
                             ]}
                         />
                     </div>

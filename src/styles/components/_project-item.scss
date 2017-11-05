@@ -26,11 +26,15 @@ $regular-size: 20rem;
     background-color: $blue;
 }
 
+.project-item--green {
+    background-color: $green;
+}
+
 .project-item__title {
     font-size: $font-size-medium;
     margin: $s-size auto $s-size auto;
     text-transform: uppercase;
-
+    width: 90%;
     @media (min-width: $desktop-breakpoint) {
         font-size: $font-size-large;
         margin: $l-size auto $s-size auto;
