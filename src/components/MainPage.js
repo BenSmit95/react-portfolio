@@ -6,25 +6,12 @@ import Introduction from './Introduction';
 import Skills from './Skills';
 
 class MainPage extends React.Component {
-    state = {
-        showHeader: false
-    }
-
-    onScroll = () => {
-        const scrollPosition = window.scrollY;
-        const headerPos = document.getElementById('introduction').getBoundingClientRect();
-        if (scrollPosition > headerPos.top) {
-            this.setState(() => ({
-                showHeader: true
-            }));
-        }
-    }
 
     render() {
         return (
             <div>
                 <Landing />
-                {this.state.showHeader && <Header />}
+                <Header />
                 <main>
                     <Introduction />
                     <Hobbies />
@@ -34,9 +21,6 @@ class MainPage extends React.Component {
         );
     }
 
-    componentDidMount() {
-        document.addEventListener('scroll', this.onScroll);
-    }
 }
 
 export default MainPage;

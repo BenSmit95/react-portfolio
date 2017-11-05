@@ -1,5 +1,6 @@
 #hobbies {
-    background-color: $grey;
+    background-color: darken($grey, 10%);
+    color: $off-white;
 }
 
 .hobbies__container {
