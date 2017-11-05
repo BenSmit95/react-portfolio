@@ -4,12 +4,15 @@
 }
 
 .introduction__content {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+
     @media (min-width: $desktop-breakpoint) {
         flex-direction: row;
+        text-align: left;
     }
 }
 

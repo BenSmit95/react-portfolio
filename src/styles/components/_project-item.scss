@@ -26,8 +26,16 @@ $regular-size: 20rem;
     background-color: $blue;
 }
 
+.project-item--light-blue {
+    background-color: $light-blue;
+}
+
 .project-item--green {
     background-color: $green;
+}
+
+.project-item--orange {
+    background-color: $dark-orange;
 }
 
 .project-item__title {

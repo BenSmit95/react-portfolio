@@ -29,8 +29,8 @@ class Landing extends React.Component {
                 {toggleTexts}
                 <div className="landing__message">
                     <h1>Hey there!</h1>
-                    <h3>Welcome to my portfolio</h3>
-                    <button onClick={this.handleButtonClick}>Proceed</button>
+                    <h3>Welcome to my page</h3>
+                    <button onClick={this.handleButtonClick} className="landing__button">Proceed</button>
                 </div>
             </section>
         );

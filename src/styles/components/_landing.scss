@@ -23,8 +23,8 @@
 .landing__message {
     animation: landing__message 2s forwards ease;
     color: $off-white;
+    padding-top: 8rem;
     text-align: center;
-    
     @keyframes landing__message {
         0% {
             margin-top: 20px;
@@ -34,5 +34,22 @@
             margin-top: 0;
             opacity: 1;
         }
+    }
+}
+
+.landing__button {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid $off-white;
+    border-radius: $xs-size;
+    color: $off-white;
+    cursor: pointer;
+    font-size: $font-size-large;
+    padding: $s-size;
+    outline: none;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.8;
     }
 }

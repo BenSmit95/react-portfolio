@@ -5,6 +5,7 @@ const Hobbies = () => (
     <section id="hobbies" className="section">
         <div className="container">
             <h2 className="section__title">Hobbies</h2>
+            <h3 className="section__sub-title">What I do in my spare time</h3>
             <div className="hobbies__container">
                 <HobbyObject
                     imageLink="/images/guitar-hobby.jpg"

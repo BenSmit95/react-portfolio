@@ -1,5 +1,6 @@
 #contact {
     background: $dark-blue;
+    border-top: 1px solid $off-white;
 }
 
 .contact__input {
@@ -46,7 +47,7 @@
     border: 1px solid lighten($orange, 10%);
     color: $orange;
     font-size: $l-size;
-    margin: $s-size auto;
+    margin: $m-size auto $xs-size auto;
     outline-color: $orange;
     padding: $s-size;
     text-transform: uppercase;

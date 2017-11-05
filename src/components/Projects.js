@@ -55,6 +55,34 @@ class Projects extends React.Component {
                                 LogoJQuery
                             ]}
                         />
+                        <ProjectItem
+                            color="light-blue"
+                            link="https://react-memory-app.herokuapp.com/"
+                            name="Memory"
+                            subText="My first react app!"
+                            imageLink="/images/memory-picture.png"
+                            skills={[
+                                LogoHtml,
+                                LogoCSS,
+                                LogoJS,
+                                LogoReact,
+                                LogoHeroku
+                            ]}
+                        />
+                        <ProjectItem
+                            color="orange"
+                            link="https://guess-the-flag.herokuapp.com/"
+                            name="Guess The Flag"
+                            subText="Combining AJAX and React for the first time"
+                            imageLink="/images/guess-the-flag-picture.png"
+                            skills={[
+                                LogoHtml,
+                                LogoCSS,
+                                LogoJS,
+                                LogoReact,
+                                LogoHeroku
+                            ]}
+                        />
                     </div>
                 </div>
             </section>

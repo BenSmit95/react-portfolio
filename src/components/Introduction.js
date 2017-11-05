@@ -3,7 +3,8 @@ import React from 'react';
 const Introduction = () => (
     <section id="introduction" className="section">
         <div className="container">
-            <h2 className="section__title">Introduction:</h2>
+            <h2 className="section__title">Introduction</h2>
+            <h3 className="section__sub-title">About me</h3>
             <div className="introduction__content">
                 <figure className="introduction__figure">
                     <img src="/images/me.png" alt="A picture of me" />

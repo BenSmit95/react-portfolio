@@ -6,10 +6,7 @@
 .hobbies__container {
     align-items: center;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row;
     justify-content: space-around;
-
-    @media (min-width: $desktop-breakpoint) {
-        flex-flow: row wrap;
-    }
+    padding: $s-size;
 }

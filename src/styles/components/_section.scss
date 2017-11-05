@@ -1,9 +1,11 @@
 .section {
+    border-top: 1px solid lighten($dark-blue, 10%);
+    padding-bottom: $s-size;
     width: 100%;
 }
 
 .section__title {
-    margin: 0;
+    margin: $s-size 0;
     text-align: center;
 }
 
@@ -12,4 +14,5 @@
     margin: 0 0 $m-size 0;
     padding-bottom: $s-size;
     text-align: center;
+    font-weight: 400;
 }

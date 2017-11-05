@@ -19,7 +19,7 @@ const Skills = () => (
     <section id="skills" className="section">
         <div className="container container--large">
             <h2 className="section__title">Skills</h2>
-            <h3 className="section__sub-title">Here are the tools and technologies I have experience with</h3>
+            <h3 className="section__sub-title">The tools and technologies I have experience with</h3>
             <ul className="skills__list">
                 <li className="skills__list-item">
                     <p>HTML5</p>
