@@ -30,7 +30,7 @@ const Skills = () => (
                     <LogoCSS />
                 </li>
                 <li className="skills__list-item">
-                    <p>JavaScript (ES6)</p>
+                    <p>ES6</p>
                     <LogoJS />
                 </li>
                 <li className="skills__list-item">

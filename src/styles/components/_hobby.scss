@@ -1,7 +1,8 @@
 .hobby {
     background: black;
     border: 1px solid darken($dark-blue, 10%);
-    margin: $s-size;
+    box-shadow: $box-shadow;
+    margin: $m-size $s-size;
     position: relative;
     transition: transform 0.2s 0.1s ease-in;
     &:hover {

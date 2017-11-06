@@ -1,5 +1,6 @@
 .footer {
     background-color: darken($dark-blue, 10%);
+    background: $gradient-blue;
     border-top: 1px solid lighten($dark-blue, 20%);
     display: flex;
     justify-content: flex-end;

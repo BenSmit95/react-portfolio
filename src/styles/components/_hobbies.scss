@@ -1,16 +1,15 @@
 #hobbies {
     background-color: $dark-grey;
+    background: $gradient-blue-reverse;
     color: $off-white;
 }
 
 .hobbies__container {
     align-items: center;
-    border-bottom: 1px solid $off-white;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    padding: $xs-size 0 $m-size 0;
-    
+    padding: $m-size 0 $m-size 0;
     @media (min-width: $desktop-breakpoint) {
         flex-flow: row;
     }

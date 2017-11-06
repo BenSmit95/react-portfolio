@@ -1,5 +1,6 @@
 #skills {
     background: $dark-blue;
+    background: $gradient-blue-reverse;
     color: $off-white;
 }
 
@@ -18,11 +19,11 @@
 }
 
 .skills__list-item {
-    flex-basis: 10rem;
+    font-size: $font-size-small;
     margin: $s-size;
     text-align: center;
     transition: transform 0.4s 0.1s;
-
+    width: 5rem;
     p {
         opacity: 0;
         transition: opacity 1s;
@@ -34,7 +35,8 @@
         }
     }
     @media (min-width: $desktop-breakpoint) {
-        flex-basis: 18rem;
+        font-size: $font-size-medium;
         margin: $l-size;
+        width: 14rem;
     }
 }

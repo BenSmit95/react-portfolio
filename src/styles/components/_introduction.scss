@@ -1,18 +1,22 @@
 #introduction {
     background: $dark-blue;
+    background: $gradient-blue-reverse;
     color: $off-white;
 }
 
 .introduction__content {
     align-items: center;
+    border-bottom: 1px solid $off-white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: $s-size;
     text-align: center;
-
     @media (min-width: $desktop-breakpoint) {
         flex-direction: row;
         text-align: left;
+        font-size: $font-size-large;
+
     }
 }
 
