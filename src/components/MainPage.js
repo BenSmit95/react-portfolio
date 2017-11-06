@@ -64,6 +64,13 @@ class MainPage extends React.Component {
                     projectsVisible: true
                 }));
                 this.addAppearClass('projects');
+                const projectsList = document.querySelectorAll('.project-item');
+                const timeBetweenAppears = 600;
+                for(let i = 0; i < projectsList.length; i++) {
+                    setTimeout(() => {
+                        projectsList[i].classList.add('project-item--appear');
+                    }, i * timeBetweenAppears);
+                }
             }
         }
         if (!this.state.contactVisible) {

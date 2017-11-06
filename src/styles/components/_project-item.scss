@@ -4,6 +4,7 @@
     height: 30rem;
     margin: $s-size;
     position: relative;
+    transform: scale(0);
     width: 30rem;
     &:hover {
         cursor: pointer;
@@ -35,6 +36,15 @@
 
 .project-item--orange {
     background-color: $dark-orange;
+}
+
+.project-item--appear {
+    animation: appear 1s forwards;
+    @keyframes appear {
+        100% {
+            transform: scale(1);
+        }
+    }
 }
 
 .project-item__title {
