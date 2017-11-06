@@ -8,3 +8,20 @@
         display: block;
     }
 }
+
+.appear {
+    animation: fade-in-header 2s forwards;
+}
+
+@keyframes fade-in-header {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+.appear__border {
+    animation: fade-in-header 2s 2s forwards;
+}

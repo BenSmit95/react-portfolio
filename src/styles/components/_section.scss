@@ -5,18 +5,35 @@
 }
 
 .section__title {
-    border-top: 1px solid $off-white;
-    margin: $l-size 0 $s-size 0;
-    padding-top: $s-size;
+    margin: 0 0 $s-size 0;
     text-align: center;
+    transform: translate(10vw);
+    opacity: 0;
     font-size: $font-size-extra-large;
+    width: 80%;
 }
 
 .section__sub-title {
-    border-bottom: 1px solid $off-white;
     font-size: $font-size-large;
-    margin: 0 0 $m-size 0;
-    padding-bottom: $s-size;
+    margin: 0;
+    opacity: 0;
     text-align: center;
+    transform: translate(-10vw);
     font-weight: 400;
+    width: 80%;
+}
+
+.section__header-container {
+    margin: $m-size 0 $s-size 0;
+    padding: $s-size;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.section__header-border {
+    color: $off-white;
+    margin: $s-size 0;
+    opacity: 0;
+    width: 100%;
 }
