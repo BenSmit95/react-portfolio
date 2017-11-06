@@ -29,7 +29,7 @@ nav {
 .header__nav-link {
     flex-grow: 1;
     font-size: $font-size-small;
-    padding: $s-size;
+    padding: $s-size $xs-size;
     text-align: center;
     transition: background-color 0s 0.05s;
     @media (min-width: $desktop-breakpoint) {
