@@ -61,7 +61,7 @@ class Projects extends React.Component {
                         />
                         <ProjectItem
                             color="light-blue"
-                            link="https://react-memory-app.herokuapp.com/"
+                            link="#"
                             name="Memory"
                             subText="My first react app!"
                             imageLink="/images/memory-picture.png"
@@ -75,7 +75,7 @@ class Projects extends React.Component {
                         />
                         <ProjectItem
                             color="orange"
-                            link="https://guess-the-flag.herokuapp.com/"
+                            link="#"
                             name="Guess The Flag"
                             subText="Combining AJAX and React for the first time"
                             imageLink="/images/guess-the-flag-picture.png"
